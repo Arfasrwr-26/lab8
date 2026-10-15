@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> CONTINENTAL HOTEL RESERVATION FORM</title> 
+    <meta charset ="UTF-8">
+    <style> 
+        body { background-color:gray; font-color:red;font-family :Arial, sans-serif; }
+        h1 { color:red; font-size:30px ; text-align:center; }
+        table { margin:auto ;background-color:rgb(215, 239, 250); border: 4px solid #000; border-spacing: 3px; width:90%; }
+        td { border: 1px solid lightslategray ;padding:6px ;}
+        td.label { font-family:"Times New Roman",serif ; font-weight:bold; text-align: right; width:30% }
+        input[type="text"] , input[type="tel"] ,  input[type="email"]  { width:90%  }
+        td.center { text-align:center; }
+    </style>
+</head>
+
+<body>
+    <h1> Continental hotel reservation form </h1>
+    <form action="#" method="post">
+    <table>
+        <tr>
+            <td class="label"> Name </td>
+            <td> <input type="text"   name="name"  placeholder="enter your name"> </td>
+        </tr>
+
+        <tr>
+            <td class="label">eMail</td>
+            <td> <input type= "email"   name ="email"   value="info@continental.pk"> </td>
+        </tr>
+
+        <tr> 
+            <td class="label"> Mobile No </td>
+            <td> <input type= "tel"  name="phonenumber"  placeholder="enter your cell number" </td>
+        </tr>
+
+        <tr> 
+            <td class="label"> Arrival time</td>
+            <td> <input type="time"  name="time"  placeholder="Enter your arrival time"> </td>
+        </tr>
+
+        <tr>
+            <td class ="label">Departure</td>
+            <td><input type="date"  name="departure-date"  </td>
+            <td><input type="time"  name="departure-time"  </td>
+        </tr>
+
+        <tr> 
+            <td class="label"> Room Type </td>
+            <td> 
+                <input type="radio"  name="single"  id="single"  value="single" >
+                <label for="single"> single </label> 
+                <input type="radio"  name="double"  id="double"  value="double" >
+                <label for="double"> double </label> <br>
+                <input type="radio"  name="suite"  id="suite"  value="presidential suite"> 
+                <label for="suite"> presidential suite </label> 
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class ="label"> Preferences </td>
+            <td>
+                <input type="checkbox"   name="Pref"   value="non-smoking"   id="nonsmoking" >
+                <label for="nonsmoking"> non-smoking </label><br>
+                <input type="checkbox"   name="Pref"   value="internet"   id="internet" >
+                <label for="internet"> internet </label><br>
+                <input type="checkbox"   name="Pref"   value="mattress"   id="mattress" >
+                <label for="mattress"> Firm mattress </label><br>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label"> Mode of payment </td>
+            <td>
+                <input type="checkbox" name="pay" value="cash"> Cash
+                <input type="checkbox" name="pay" value="check"> Check <br>
+                <input type="checkbox" name="pay" value="card"> Credit Card
+            <select name="card">
+                <option> Select Card  </option>
+                <option> ATM card  </option>
+                <option> MasterCard  </option>
+            </select>
+            </td>
+        </tr>
+
+      <tr>
+          <td colspan="2" class="center">
+          <input type="submit" value="Send Data">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
